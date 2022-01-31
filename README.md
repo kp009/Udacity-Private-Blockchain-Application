@@ -2,39 +2,39 @@
 
 #### This application allows to register the stars and it knows who own the star.
 
-#### To run this application
+#### 1. To run this application
  ```bash
      `node app.js`
 
     > Server Listening for port: 8000
-    ```
+ ```
 
-#### The application will create a Genesis Block when we run the application.
+#### 2. The application will create a Genesis Block when we run the application.
 
-![Request: http://localhost:8000/block/height/0 ](Screenshots/1 Postman Genesis Block.png)
+![Request: http://localhost:8000/block/height/0](Screenshots/1%20Postman%20Genesis%20Block.png)
 
-#### The user will request the application to send a message to be signed using a Wallet and in this way verify the ownership over the wallet address. The message format will be: `<WALLET_ADRESS>:${new Date().getTime().toString().slice(0,-3)}:starRegistry`;
 
-![Request: http://localhost:8000/requestValidation ](Screenshots/2 Request of ownership.png)
+#### 3. The user will request the application to send a message to be signed using a Wallet and verify the ownership. 
+The message format will be: `<WALLET_ADRESS>:${new Date().getTime().toString().slice(0,-3)}:starRegistry`;
 
-#### Sign the message with your Wallet:
+![Request: http://localhost:8000/requestValidation](Screenshots/2%20Request%20of%20ownership.png)
 
-![Use the Wallet to sign a message](Screenshots/3 Sign the message.png)
+#### 4. Sign the message with your Wallet:
 
-#### Verify the message 
+![Use the Wallet to sign a message](Screenshots/3%20Sign%20the%20message.png)
 
-![Verify the message](Screenshots/4 Verify the message.png)
+#### 5. Verify the message 
 
-#### Submit the star
+![Verify the message](Screenshots/4%20Verify%20the%20message.png)
 
-![Request: http://localhost:8000/submitstar ](Screenshots/5 Submit my Star1.png)
+#### 6. Submit the star
 
-![Request: http://localhost:8000/submitstar ](Screenshots/6 Submit my Star2.png)
+![Request: http://localhost:8000/submitstar](Screenshots/5%20Submit%20my%20Star1.png)
 
-#### Retrieve Stars owned
+![Request: http://localhost:8000/submitstar](Screenshots/6%20Submit%20my%20Star2.png)
 
-![Request: http://localhost:8000/blocks/<WALLET_ADDRESS> ](Screenshots/7 Retrieve Stars.png)
+#### 7. Retrieve Stars owned
 
-#### Output
+![Request: http://localhost:8000/blocks/<WALLET_ADDRESS>](Screenshots/7%20Retrieve%20Stars.png)
 
-![Output](Screenshots/8 Output.png)
+
